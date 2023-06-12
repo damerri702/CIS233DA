@@ -1,0 +1,33 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    background-color: darkolivegreen;
+  }
+
+  .day {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: right;
+    background-color: bisque;
+  }
+
+  .highlight {
+    background-color: brown;
+  }
+
+  .month {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: bisque;
+  }
+
+  body {
+    background-color: darkolivegreen;
+  }
