@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    justify-content: center; /* Align images horizontally */
+    align-items: center; /* Align images vertically */
+    flex-wrap: wrap;
+  }
+  header div {
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    margin: 10px;
+  }
+  header div p {
+    box-sizing: border-box;
+    border: 1px solid rgb(201, 103, 103); /* Near white border color */
+    padding: 5px; /* Add padding for spacing between the text and the border */
+    margin-top: 0;
+    width: 100%;
+  }
+  img {
+    width: 250px; /* Adjust the width to your desired size */
+    height: 200px; /* Maintain aspect ratio */
+    border: solid rgb(201, 103, 103);
+    margin: 0 10px;
+  }
+
+  #current-weather {
+    text-align: center; /* Center the section content horizontally */
+  }
+
+  #current-weather h2 {
+    border: 1px solid rgb(201, 103, 103); /* Add border around the h2 tag */
+    padding: 5px; /* Add padding for spacing between the border and the text */
+  }
+  
+  .weather-info {
+    display: inline-block; /* Display the weather information on the same line */
+    margin-top: 10px; /* Add some spacing between the heading and the weather info */
+  }
+  
+  .weather-info p {
+    display: inline; /* Display the temperature paragraphs on the same line */
+    margin-right: 10px; /* Add spacing between the temperature values */
+    border: 1px solid rgb(201, 103, 103); /* Add border around the p tags */
+    padding: 5px; /* Add padding for spacing between the border and the text */
+  }
+  
+  .weather-info p:last-child {
+    margin-right: 0; /* Remove margin-right for the last temperature value */
+  }
+
+  #brussels-description {
+    text-align: center; /* Center the section content horizontally */
+  }
+  
+  #brussels-description h2,
+  #brussels-description p {
+    border: 1px solid rgb(201, 103, 103); /* Add border around the elements */
+    padding: 10px; /* Add some padding for spacing */
+    margin: 10px auto; /* Center the elements horizontally and add spacing */
+  }
+
+  #brussels-description p {
+    max-width: 90%;
+  }
