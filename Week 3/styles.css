@@ -13,7 +13,7 @@ header {
   }
   header div p {
     box-sizing: border-box;
-    border: 1px solid rgb(202, 97, 97); 
+    border: 1px solid rgb(202, 97, 97); /* Color for border of all imgs in the site */
     padding: 5px; 
     margin-top: 0;
     width: 100%;
@@ -25,13 +25,14 @@ header {
     margin: 0 10px;
   }
   body {
-    background-color: rgb(203, 167, 167);
+    background-color: rgb(170, 138, 138); /* Background color for site */
   }
   h2 {
-  background-color: rgb(192, 130, 130); 
+  background-color: rgb(102, 96, 96); /* Darker background for h2 text */
+  text-shadow: 1px 1px 2px rgb(255, 255, 255); /* White outline */ 
   }
   p {
-    background-color: rgb(204, 143, 143);
+    background-color: rgb(204, 143, 143); /* Background color for p text boxes */
   }
 
   #current-weather {
@@ -68,6 +69,13 @@ header {
     border: 1px solid rgb(202, 97, 97); 
     padding: 10px; 
     margin: 10px auto; 
+  }
+
+  #brussels-description h2 {
+    border: 1px solid rgb(202, 97, 97);
+    padding: 10px;
+    margin: 10px auto;
+    color: rgb(255, 255, 0); /* Yellow color for text */
   }
 
   #brussels-description p {
@@ -112,6 +120,7 @@ header {
     display: inline-block;
     border: 1px solid rgb(202, 97, 97); 
     padding: 10px; 
+    color: rgb(255, 0, 0); /* Red color for text */
   }
   
   .video-container {
@@ -165,3 +174,4 @@ header {
           font-size: 16px;
         }
       }
+

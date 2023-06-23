@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-image: url('images/1178341.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 8;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+main img {
+    max-width: 100%;
+    width: 324px;
+    height: 95px;
+}
+
+footer {
+    background-color: #bf5a1f41;
+    flex: 2;
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 137px;
+}
