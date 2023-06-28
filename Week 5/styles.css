@@ -1,0 +1,177 @@
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+  }
+  header div {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 10px;
+  }
+  header div p {
+    box-sizing: border-box;
+    border: 1px solid rgb(202, 97, 97); /* Color for border of all imgs in the site */
+    padding: 5px; 
+    margin-top: 0;
+    width: 100%;
+  }
+  img {
+    width: 250px; 
+    height: 200px; 
+    border: solid rgb(202, 97, 97);
+    margin: 0 10px;
+  }
+  body {
+    background-color: rgb(170, 138, 138); /* Background color for site */
+  }
+  h2 {
+  background-color: rgb(102, 96, 96); /* Darker background for h2 text */
+  text-shadow: 1px 1px 2px rgb(255, 255, 255); /* White outline */ 
+  }
+  p {
+    background-color: rgb(204, 143, 143); /* Background color for p text boxes */
+  }
+
+  #current-weather {
+    text-align: center; 
+  }
+
+  #current-weather h2 {
+    border: 1px solid rgb(202, 97, 97); 
+    padding: 5px; 
+  }
+  
+  .weather-info {
+    display: inline-block; 
+    margin-top: 10px; 
+  }
+  
+  .weather-info p {
+    display: inline; 
+    margin-right: 10px; 
+    border: 1px solid rgb(202, 97, 97); 
+    padding: 5px; 
+  }
+  
+  .weather-info p:last-child {
+    margin-right: 0; 
+  }
+
+  #brussels-description {
+    text-align: center; 
+  }
+  
+  #brussels-description h2,
+  #brussels-description p {
+    border: 1px solid rgb(202, 97, 97); 
+    padding: 10px; 
+    margin: 10px auto; 
+  }
+
+  #brussels-description h2 {
+    border: 1px solid rgb(202, 97, 97);
+    padding: 10px;
+    margin: 10px auto;
+    color: rgb(255, 255, 0); /* Yellow color for text */
+  }
+
+  #brussels-description p {
+    max-width: 90%;
+  }
+
+  .brussels-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .brussels-images img {
+    width: 250px;
+    height: 200px;
+    border: solid rgb(202, 97, 97);
+    margin: 10px;
+  }
+
+  .brussels-images div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .brussels-images p {
+    text-align: center; 
+    margin-top: 5px; 
+    border: 1px solid rgb(202, 97, 97);
+    padding: 5px;
+    width: 250px;
+  }
+
+  .youtube-video {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .youtube-video h2 {
+    display: inline-block;
+    border: 1px solid rgb(202, 97, 97); 
+    padding: 10px; 
+    color: rgb(255, 0, 0); /* Red color for text */
+  }
+  
+  .video-container {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 28.125%; 
+        margin: 0 auto;
+        max-width: 560px;
+        border: 2px solid rgb(202, 97, 97); 
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+    @media screen and (max-width: 1024px) {
+        
+        header {
+          flex-wrap: wrap; 
+          justify-content: center; 
+        }
+      
+        header div {
+          width: 50%; 
+          margin: 5px; 
+        }
+      
+        .youtube-video {
+          margin-top: 20px; 
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+      
+        header div {
+          display: none;
+        }
+      
+        #header-dropdown {
+          text-align: center; 
+          margin: 10px;
+        }
+      
+        #header-dropdown select {
+          width: 100%; 
+          padding: 5px;
+          font-size: 16px;
+        }
+      }
+
