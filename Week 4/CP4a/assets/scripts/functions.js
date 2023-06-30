@@ -53,3 +53,21 @@ function toggleParkingBrake() {
     document.getElementById('toggleParkingBrake').src = './assets/images/bttn_park_1.PNG';
   }
 }
+
+let gearShiftStatus = 0;
+let gearShiftIndicator = document.getElementById('shifter.png');
+
+function setMode() {
+  switch (gearShiftStatus) {
+    case 0:
+      gearShiftStatus = 1;
+      gearShiftIndicator.style.top = '720px';
+      gearShiftIndicator.innerHTML = 'ECO PRO';
+      break;
+    default:
+      gearShiftStatus = 0;
+      gearShiftIndicator.style.top = '700px';
+      gearShiftIndicator.innerHTML = 'PARK';
+      break;
+  }
+}

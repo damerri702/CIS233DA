@@ -11,35 +11,35 @@
   </head>
   <body>
     <header>
-      <div>
-        <a href="budapest.html"
-          ><img id="Budapest.jpeg" src="images/Budapest.jpeg" alt="Budapest"
-        /></a>
+      <div onclick="getCity('Budapest')">
+        <img id="Budapest.jpeg" src="images/Budapest.jpeg" alt="Budapest" />
         <p>Budapest, HU</p>
       </div>
-      <div>
-        <a href="milan.html"
-          ><img id="Milan.jpeg" src="images/Milan.jpeg" alt="Milan"
-        /></a>
+      <div onclick="getCity('Milan')">
+        <img id="Milan.jpeg" src="images/Milan.jpeg" alt="Milan" />
         <p>Milan, IT</p>
       </div>
-      <div>
-        <a href="venice.html"
-          ><img id="Venice.jpeg" src="images/Venice.jpeg" alt="Venice"
-        /></a>
+      <div onclick="getCity('Venice')">
+        <img id="Venice.jpeg" src="images/Venice.jpeg" alt="Venice" />
         <p>Venice, IT</p>
       </div>
-      <div>
-        <a href="barcelona.html"
-          ><img id="Barcelona.jpeg" src="images/Barcelona.jpeg" alt="Barcelona"
-        /></a>
+      <div onclick="getCity('Barcelona')">
+        <img id="Barcelona.jpeg" src="images/Barcelona.jpeg" alt="Barcelona" />
         <p>Barcelona, ES</p>
       </div>
-      <div>
-        <a href="brussels.html"
-          ><img id="Brussels.jpeg" src="images/Brussels.jpeg" alt="Brussels"
-        /></a>
+      <div onclick="getCity('Brussels')">
+        <img id="Brussels.jpeg" src="images/Brussels.jpeg" alt="Brussels" />
         <p>Brussels, BE</p>
+      </div>
+      <div class="dropdown">
+        <select onchange="selectCity(this.value)">
+          <option value="">Select a city</option>
+          <option value="Budapest">Budapest, HU</option>
+          <option value="Milan">Milan, IT</option>
+          <option value="Venice">Venice, IT</option>
+          <option value="Barcelona">Barcelona, ES</option>
+          <option value="Brussels" selected>Brussels, BE</option>
+        </select>
       </div>
     </header>
     <main>
@@ -48,7 +48,6 @@
         <div class="weather-info">
           <p id="temperature">Temperature:</p>
           <p id="humidity">Humidity:</p>
-          <p id="description">Description:</p>
           <p id="sunrise">Sunrise:</p>
           <p id="sunset">Sunset:</p>
           <p id="cloudiness">Cloudiness:</p>
